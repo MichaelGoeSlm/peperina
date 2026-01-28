@@ -56,12 +56,18 @@
             <a href="#" class="logo">🌿 Peperina</a>
             <nav class="nav">
                 <ul class="nav-links">
-                    <li><a href="#nosotros">Nosotros</a></li>
-                    <li><a href="#menu">Menú</a></li>
-                    <li><a href="#galeria">Galería</a></li>
-                    <li><a href="#opiniones">Opiniones</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#nosotros" data-i18n="nav_about">Nosotros</a></li>
+                    <li><a href="#menu" data-i18n="nav_menu">Menú</a></li>
+                    <li><a href="#galeria" data-i18n="nav_gallery">Galería</a></li>
+                    <li><a href="#opiniones" data-i18n="nav_reviews">Opiniones</a></li>
+                    <li><a href="#contacto" data-i18n="nav_contact">Contacto</a></li>
                 </ul>
+                <!-- Language Switcher -->
+                <div class="lang-switcher">
+                    <button class="lang-btn active" data-lang="es" onclick="setLanguage('es')" title="Español">ES</button>
+                    <button class="lang-btn" data-lang="en" onclick="setLanguage('en')" title="English">EN</button>
+                    <button class="lang-btn" data-lang="fr" onclick="setLanguage('fr')" title="Français">FR</button>
+                </div>
             </nav>
             <button class="mobile-menu-btn" aria-label="Menu">
                 <span></span><span></span><span></span>
@@ -73,16 +79,16 @@
     <section class="hero" style="background-image: url('images/hero.jpg');">
         <div class="hero-overlay"></div>
         <div class="container hero-content">
-            <div class="hero-badge">☕ Casa de Té & Café</div>
+            <div class="hero-badge" data-i18n="hero_badge">☕ Casa de Té & Café</div>
             <h1>Peperina</h1>
-            <p class="hero-subtitle">Un rincón especial en el corazón del Valle de Uco</p>
+            <p class="hero-subtitle" data-i18n="hero_subtitle">Un rincón especial en el corazón del Valle de Uco</p>
             <div class="hero-rating">
                 <span class="stars">⭐⭐⭐⭐⭐</span>
-                <span class="rating-text">4.6 estrellas · 683 opiniones</span>
+                <span class="rating-text" data-i18n="hero_rating">4.6 estrellas · 683 opiniones</span>
             </div>
             <div class="hero-cta">
-                <a href="#menu" class="btn btn-white">Ver menú</a>
-                <a href="https://wa.me/5426226845604" class="btn btn-outline" target="_blank">📲 WhatsApp</a>
+                <a href="#menu" class="btn btn-white" data-i18n="hero_cta_menu">Ver menú</a>
+                <a href="https://wa.me/5426226845604" class="btn btn-outline" target="_blank" data-i18n="hero_cta_whatsapp">📲 WhatsApp</a>
             </div>
         </div>
     </section>
@@ -92,21 +98,21 @@
         <div class="container">
             <div class="about-grid">
                 <div class="about-content">
-                    <h2>Nuestra Historia</h2>
-                    <p>Peperina es más que una casa de té — es un espacio donde el tiempo se detiene. En el corazón de La Consulta, Valle de Uco, ofrecemos un refugio acogedor para disfrutar de los mejores cafés de especialidad, tés seleccionados y pastelería artesanal.</p>
-                    <p>Cada visita es una experiencia única: desayunos abundantes, meriendas para compartir y tortas que son pura poesía.</p>
+                    <h2 data-i18n="about_title">Nuestra Historia</h2>
+                    <p data-i18n="about_p1">Peperina es más que una casa de té — es un espacio donde el tiempo se detiene. En el corazón de La Consulta, Valle de Uco, ofrecemos un refugio acogedor para disfrutar de los mejores cafés de especialidad, tés seleccionados y pastelería artesanal.</p>
+                    <p data-i18n="about_p2">Cada visita es una experiencia única: desayunos abundantes, meriendas para compartir y tortas que son pura poesía.</p>
                     <div class="about-features">
                         <div class="feature">
                             <span class="feature-icon">☕</span>
-                            <span>Café de especialidad</span>
+                            <span data-i18n="feature_1">Café de especialidad</span>
                         </div>
                         <div class="feature">
                             <span class="feature-icon">🍰</span>
-                            <span>Pastelería artesanal</span>
+                            <span data-i18n="feature_2">Pastelería artesanal</span>
                         </div>
                         <div class="feature">
                             <span class="feature-icon">🌿</span>
-                            <span>Ambiente acogedor</span>
+                            <span data-i18n="feature_3">Ambiente acogedor</span>
                         </div>
                     </div>
                 </div>
@@ -123,104 +129,104 @@
     <!-- Menu -->
     <section id="menu" class="menu-section">
         <div class="container">
-            <h2 class="section-title">Nuestro Menú</h2>
-            <p class="section-subtitle">Sabores que enamoran</p>
+            <h2 class="section-title" data-i18n="menu_title">Nuestro Menú</h2>
+            <p class="section-subtitle" data-i18n="menu_subtitle">Sabores que enamoran</p>
             
             <div class="menu-grid">
                 <div class="menu-category">
-                    <h3>☕ Cafetería</h3>
+                    <h3 data-i18n="menu_cat_coffee">☕ Cafetería</h3>
                     <div class="menu-item">
                         <div class="item-header">
-                            <span class="item-name">Espresso</span>
+                            <span class="item-name" data-i18n="item_espresso">Espresso</span>
                         </div>
-                        <p class="item-desc">Shot de café intenso y aromático</p>
+                        <p class="item-desc" data-i18n="item_espresso_desc">Shot de café intenso y aromático</p>
                     </div>
                     <div class="menu-item">
                         <div class="item-header">
-                            <span class="item-name">Cappuccino</span>
-                            <span class="item-badge">⭐ Popular</span>
+                            <span class="item-name" data-i18n="item_cappuccino">Cappuccino</span>
+                            <span class="item-badge" data-i18n="badge_popular">⭐ Popular</span>
                         </div>
-                        <p class="item-desc">Espresso con leche espumada y cacao</p>
+                        <p class="item-desc" data-i18n="item_cappuccino_desc">Espresso con leche espumada y cacao</p>
                     </div>
                     <div class="menu-item">
                         <div class="item-header">
-                            <span class="item-name">Café con leche</span>
+                            <span class="item-name" data-i18n="item_cafe_leche">Café con leche</span>
                         </div>
-                        <p class="item-desc">Clásico y reconfortante</p>
+                        <p class="item-desc" data-i18n="item_cafe_leche_desc">Clásico y reconfortante</p>
                     </div>
                     <div class="menu-item">
                         <div class="item-header">
-                            <span class="item-name">Latte</span>
+                            <span class="item-name" data-i18n="item_latte">Latte</span>
                         </div>
-                        <p class="item-desc">Suave y cremoso</p>
-                    </div>
-                </div>
-                
-                <div class="menu-category">
-                    <h3>🍳 Desayunos</h3>
-                    <div class="menu-item">
-                        <div class="item-header">
-                            <span class="item-name">Desayuno Peperina</span>
-                            <span class="item-badge">⭐ Recomendado</span>
-                        </div>
-                        <p class="item-desc">Café o té, jugo natural, tostadas, medialunas, frutas frescas y dulces caseros</p>
-                    </div>
-                    <div class="menu-item">
-                        <div class="item-header">
-                            <span class="item-name">Tostado completo</span>
-                        </div>
-                        <p class="item-desc">Pan artesanal con jamón, queso y tomate</p>
-                    </div>
-                    <div class="menu-item">
-                        <div class="item-header">
-                            <span class="item-name">Medialunas</span>
-                        </div>
-                        <p class="item-desc">Recién horneadas, de manteca</p>
+                        <p class="item-desc" data-i18n="item_latte_desc">Suave y cremoso</p>
                     </div>
                 </div>
                 
                 <div class="menu-category">
-                    <h3>🍰 Pastelería</h3>
+                    <h3 data-i18n="menu_cat_breakfast">🍳 Desayunos</h3>
                     <div class="menu-item">
                         <div class="item-header">
-                            <span class="item-name">Torta Chajá</span>
-                            <span class="item-badge">⭐ Favorito</span>
+                            <span class="item-name" data-i18n="item_desayuno">Desayuno Peperina</span>
+                            <span class="item-badge" data-i18n="badge_recommended">⭐ Recomendado</span>
                         </div>
-                        <p class="item-desc">Bizcochuelo, merengue, crema y duraznos</p>
+                        <p class="item-desc" data-i18n="item_desayuno_desc">Café o té, jugo natural, tostadas, medialunas, frutas frescas y dulces caseros</p>
                     </div>
                     <div class="menu-item">
                         <div class="item-header">
-                            <span class="item-name">Cheesecake</span>
+                            <span class="item-name" data-i18n="item_tostado">Tostado completo</span>
                         </div>
-                        <p class="item-desc">Con frutos rojos de estación</p>
+                        <p class="item-desc" data-i18n="item_tostado_desc">Pan artesanal con jamón, queso y tomate</p>
                     </div>
                     <div class="menu-item">
                         <div class="item-header">
-                            <span class="item-name">Tortas por encargo</span>
+                            <span class="item-name" data-i18n="item_medialunas">Medialunas</span>
                         </div>
-                        <p class="item-desc">Personalizadas para tu evento especial</p>
+                        <p class="item-desc" data-i18n="item_medialunas_desc">Recién horneadas, de manteca</p>
                     </div>
                 </div>
                 
                 <div class="menu-category">
-                    <h3>🍹 Bebidas</h3>
+                    <h3 data-i18n="menu_cat_pastry">🍰 Pastelería</h3>
                     <div class="menu-item">
                         <div class="item-header">
-                            <span class="item-name">Jugos naturales</span>
+                            <span class="item-name" data-i18n="item_chaja">Torta Chajá</span>
+                            <span class="item-badge" data-i18n="badge_favorite">⭐ Favorito</span>
                         </div>
-                        <p class="item-desc">Naranja, pomelo, mix de frutas</p>
+                        <p class="item-desc" data-i18n="item_chaja_desc">Bizcochuelo, merengue, crema y duraznos</p>
                     </div>
                     <div class="menu-item">
                         <div class="item-header">
-                            <span class="item-name">Té premium</span>
+                            <span class="item-name" data-i18n="item_cheesecake">Cheesecake</span>
                         </div>
-                        <p class="item-desc">Selección de hebras finas</p>
+                        <p class="item-desc" data-i18n="item_cheesecake_desc">Con frutos rojos de estación</p>
                     </div>
                     <div class="menu-item">
                         <div class="item-header">
-                            <span class="item-name">Chocolatada</span>
+                            <span class="item-name" data-i18n="item_tortas">Tortas por encargo</span>
                         </div>
-                        <p class="item-desc">Con cacao de calidad</p>
+                        <p class="item-desc" data-i18n="item_tortas_desc">Personalizadas para tu evento especial</p>
+                    </div>
+                </div>
+                
+                <div class="menu-category">
+                    <h3 data-i18n="menu_cat_drinks">🍹 Bebidas</h3>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <span class="item-name" data-i18n="item_jugos">Jugos naturales</span>
+                        </div>
+                        <p class="item-desc" data-i18n="item_jugos_desc">Naranja, pomelo, mix de frutas</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <span class="item-name" data-i18n="item_te">Té premium</span>
+                        </div>
+                        <p class="item-desc" data-i18n="item_te_desc">Selección de hebras finas</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <span class="item-name" data-i18n="item_chocolate">Chocolatada</span>
+                        </div>
+                        <p class="item-desc" data-i18n="item_chocolate_desc">Con cacao de calidad</p>
                     </div>
                 </div>
             </div>
@@ -230,25 +236,25 @@
     <!-- Gallery -->
     <section id="galeria" class="gallery-section">
         <div class="container">
-            <h2 class="section-title">Nuestro Espacio</h2>
-            <p class="section-subtitle">Un lugar para disfrutar</p>
+            <h2 class="section-title" data-i18n="gallery_title">Nuestro Espacio</h2>
+            <p class="section-subtitle" data-i18n="gallery_subtitle">Un lugar para disfrutar</p>
             
             <div class="gallery-grid">
                 <div class="gallery-item gallery-item-large">
                     <img src="images/fachada.jpg" alt="Fachada de Peperina" loading="lazy">
-                    <div class="gallery-caption">Nuestra fachada</div>
+                    <div class="gallery-caption" data-i18n="gallery_facade">Nuestra fachada</div>
                 </div>
                 <div class="gallery-item">
                     <img src="images/desayuno.jpg" alt="Desayuno Peperina" loading="lazy">
-                    <div class="gallery-caption">Desayuno completo</div>
+                    <div class="gallery-caption" data-i18n="gallery_breakfast">Desayuno completo</div>
                 </div>
                 <div class="gallery-item">
                     <img src="images/tortas.jpg" alt="Tortas artesanales" loading="lazy">
-                    <div class="gallery-caption">Pastelería artesanal</div>
+                    <div class="gallery-caption" data-i18n="gallery_pastry">Pastelería artesanal</div>
                 </div>
                 <div class="gallery-item">
                     <img src="images/meriendas.jpg" alt="Merienda para compartir" loading="lazy">
-                    <div class="gallery-caption">Meriendas abundantes</div>
+                    <div class="gallery-caption" data-i18n="gallery_snacks">Meriendas abundantes</div>
                 </div>
             </div>
         </div>
@@ -257,12 +263,12 @@
     <!-- Testimonials -->
     <section id="opiniones" class="testimonials-section">
         <div class="container">
-            <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+            <h2 class="section-title" data-i18n="testimonials_title">Lo que dicen nuestros clientes</h2>
             <div class="rating-summary">
                 <span class="big-rating">4.6</span>
                 <div class="rating-details">
                     <span class="stars">⭐⭐⭐⭐⭐</span>
-                    <span>683 opiniones en Google</span>
+                    <span data-i18n="testimonials_count">683 opiniones en Google</span>
                 </div>
             </div>
             
@@ -272,21 +278,21 @@
                         <span class="testimonial-name">María Luisa T.</span>
                         <span class="testimonial-stars">⭐⭐⭐⭐⭐</span>
                     </div>
-                    <p>"Pedí una torta de cumpleaños. ¡Servicio EXCELENTE vía WhatsApp! Pedido fácil y excelentes consejos. La torta Chajá estaba deliciosa."</p>
+                    <p data-i18n="review_1">"Pedí una torta de cumpleaños. ¡Servicio EXCELENTE vía WhatsApp! Pedido fácil y excelentes consejos. La torta Chajá estaba deliciosa."</p>
                 </div>
                 <div class="testimonial-card">
                     <div class="testimonial-header">
                         <span class="testimonial-name">Lucia G.</span>
                         <span class="testimonial-stars">⭐⭐⭐⭐⭐</span>
                     </div>
-                    <p>"¡El café estaba delicioso! Medialunas exquisitas ❤️ Todo apetitoso, el ambiente relajado y la música agradable. ¡Súper recomendable!"</p>
+                    <p data-i18n="review_2">"¡El café estaba delicioso! Medialunas exquisitas ❤️ Todo apetitoso, el ambiente relajado y la música agradable. ¡Súper recomendable!"</p>
                 </div>
                 <div class="testimonial-card">
                     <div class="testimonial-header">
                         <span class="testimonial-name">Mili R.</span>
                         <span class="testimonial-stars">⭐⭐⭐⭐⭐</span>
                     </div>
-                    <p>"¡Lugar hermoso! Gran variedad de platos y bebidas, el servicio es excelente y la comida deliciosa. 🫶🏼"</p>
+                    <p data-i18n="review_3">"¡Lugar hermoso! Gran variedad de platos y bebidas, el servicio es excelente y la comida deliciosa. 🫶🏼"</p>
                 </div>
             </div>
         </div>
@@ -297,25 +303,25 @@
         <div class="container">
             <div class="info-grid">
                 <div class="info-card">
-                    <h3>🕐 Horarios</h3>
+                    <h3 data-i18n="info_hours_title">🕐 Horarios</h3>
                     <div class="hours">
-                        <div class="hour-row"><span>Lunes</span><span>Cerrado</span></div>
-                        <div class="hour-row"><span>Mar - Vie</span><span>08:00-13:00 · 17:00-22:00</span></div>
-                        <div class="hour-row"><span>Sábado</span><span>09:00-13:30 · 17:00-22:30</span></div>
-                        <div class="hour-row"><span>Domingo</span><span>09:00-13:30 · 17:00-22:00</span></div>
+                        <div class="hour-row"><span data-i18n="day_monday">Lunes</span><span data-i18n="closed">Cerrado</span></div>
+                        <div class="hour-row"><span data-i18n="day_tue_fri">Mar - Vie</span><span>08:00-13:00 · 17:00-22:00</span></div>
+                        <div class="hour-row"><span data-i18n="day_saturday">Sábado</span><span>09:00-13:30 · 17:00-22:30</span></div>
+                        <div class="hour-row"><span data-i18n="day_sunday">Domingo</span><span>09:00-13:30 · 17:00-22:00</span></div>
                     </div>
                 </div>
                 <div class="info-card">
-                    <h3>📍 Ubicación</h3>
+                    <h3 data-i18n="info_location_title">📍 Ubicación</h3>
                     <p class="address">San Martín 118<br>M5567 La Consulta<br>Mendoza, Argentina</p>
-                    <a href="https://maps.app.goo.gl/tZ6MbLzWdsmMKd9u9" target="_blank" class="btn btn-secondary">Ver en Google Maps</a>
+                    <a href="https://maps.app.goo.gl/tZ6MbLzWdsmMKd9u9" target="_blank" class="btn btn-secondary" data-i18n="btn_maps">Ver en Google Maps</a>
                 </div>
                 <div class="info-card">
-                    <h3>📞 Contacto</h3>
+                    <h3 data-i18n="info_contact_title">📞 Contacto</h3>
                     <p class="address">San Martín 118<br>La Consulta, Mendoza</p>
                     <p><a href="tel:+5426226845604">📱 02622 68-4560</a></p>
                     <p><a href="https://facebook.com/peperinacasadete" target="_blank">📘 Facebook</a></p>
-                    <a href="https://wa.me/5426226845604" target="_blank" class="btn btn-primary">💬 WhatsApp</a>
+                    <a href="https://wa.me/5426226845604" target="_blank" class="btn btn-primary" data-i18n="btn_whatsapp">💬 WhatsApp</a>
                 </div>
             </div>
         </div>
@@ -325,11 +331,11 @@
     <section id="contacto" class="contact-section">
         <div class="container">
             <div class="contact-content">
-                <h2>¿Querés hacer un pedido?</h2>
-                <p>Tortas personalizadas, meriendas para llevar o reservas especiales</p>
+                <h2 data-i18n="contact_title">¿Querés hacer un pedido?</h2>
+                <p data-i18n="contact_subtitle">Tortas personalizadas, meriendas para llevar o reservas especiales</p>
                 <div class="contact-buttons">
-                    <a href="https://wa.me/5426226845604?text=Hola!%20Quiero%20hacer%20un%20pedido" target="_blank" class="btn btn-white btn-lg">📲 Escribinos por WhatsApp</a>
-                    <a href="tel:+5426226845604" class="btn btn-outline btn-lg">📞 Llamar ahora</a>
+                    <a href="https://wa.me/5426226845604?text=Hola!%20Quiero%20hacer%20un%20pedido" target="_blank" class="btn btn-white btn-lg" data-i18n="contact_btn_whatsapp">📲 Escribinos por WhatsApp</a>
+                    <a href="tel:+5426226845604" class="btn btn-outline btn-lg" data-i18n="contact_btn_call">📞 Llamar ahora</a>
                 </div>
             </div>
         </div>
@@ -341,18 +347,18 @@
             <div class="footer-content">
                 <div class="footer-brand">
                     <span class="logo">🌿 Peperina</span>
-                    <p>Casa de Té & Café<br>La Consulta, Valle de Uco</p>
+                    <p><span data-i18n="footer_tagline">Casa de Té & Café</span><br><span data-i18n="footer_location">La Consulta, Valle de Uco</span></p>
                 </div>
                 <div class="footer-links">
-                    <a href="#nosotros">Nosotros</a>
-                    <a href="#menu">Menú</a>
-                    <a href="#opiniones">Opiniones</a>
-                    <a href="#contacto">Contacto</a>
+                    <a href="#nosotros" data-i18n="nav_about">Nosotros</a>
+                    <a href="#menu" data-i18n="nav_menu">Menú</a>
+                    <a href="#opiniones" data-i18n="nav_reviews">Opiniones</a>
+                    <a href="#contacto" data-i18n="nav_contact">Contacto</a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2025 Peperina. Todos los derechos reservados.</p>
-                <p class="footer-credit">Sitio creado por <a href="https://agency.devhub.wiki" target="_blank">DevHub Agency</a></p>
+                <p data-i18n="footer_rights">© 2025 Peperina. Todos los derechos reservados.</p>
+                <p class="footer-credit"><span data-i18n="footer_credit">Sitio creado por</span> <a href="https://agency.devhub.wiki" target="_blank">DevHub Agency</a></p>
             </div>
         </div>
     </footer>
@@ -362,6 +368,7 @@
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
     </a>
 
+    <script src="js/i18n.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

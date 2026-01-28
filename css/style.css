@@ -803,3 +803,55 @@ a {
         text-align: center;
     }
 }
+
+/* =====================================================
+   Language Switcher
+   ===================================================== */
+.lang-switcher {
+    display: flex;
+    gap: 4px;
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: 1px solid rgba(0,0,0,0.1);
+}
+
+.lang-btn {
+    background: transparent;
+    border: none;
+    padding: 6px 10px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-light);
+    cursor: pointer;
+    border-radius: 4px;
+    transition: var(--transition);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.lang-btn:hover {
+    background: var(--cream-dark);
+    color: var(--primary);
+}
+
+.lang-btn.active {
+    background: var(--primary);
+    color: var(--white);
+}
+
+/* Mobile language switcher */
+@media (max-width: 768px) {
+    .lang-switcher {
+        position: absolute;
+        top: 20px;
+        right: 70px;
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+    
+    .lang-btn {
+        padding: 4px 8px;
+        font-size: 0.7rem;
+    }
+}
